@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAWAAB - RWB Meme Coin</title>
+  
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glow.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet"       
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Cg8C6JHkzZLNEwG8VS9C..."
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+  <style>
+    body { background: #0b0b0f; color: #e9e7ee; font-family: 'Segoe UI', sans-serif; }
+    .glow-card { background:#0f0f13; border-radius:18px; padding:25px; transition:0.3s; border:1px solid #1b1b22; }
+    .glow-card:hover { box-shadow:0 0 25px #7b2ff7aa; border-color:#7b2ff7; }
+    .glow-btn:hover { box-shadow:0 0 20px #7b2ff7aa; }
+    .hero-img { filter: drop-shadow(0 0 25px #7b2ff7aa); }    
+  </style>
+  
+
+
+
+
+</head>
+<body>
+<!-- NAVBAR -->
+<header class="fixed top-0 left-0 w-full z-50 bg-[#0b0b0fea] backdrop-blur border-b border-purple-900/40">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+    
+    <!-- LOGO -->
+    <div class="flex items-center gap-3">
+      <img src="assets/logo/mascot.png" class="w-12 h-12 object-contain" />
+      <img src="assets/logo/rawaab-icon.png" class="h-10 object-contain" />
+    </div>
+
+    <!-- DESKTOP NAV -->
+    <ul class="hidden md:flex items-center gap-8 text-lg">
+      <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
+      <li><a href="index.html#about" class="hover:text-purple-400">About</a></li>
+      <li><a href="index.html#tokenomics" class="hover:text-purple-400">Tokenomics</a></li>
+      <li><a href="index.html#partners" class="hover:text-purple-400">Partners</a></li>
+      <li><a href="chart.html" class="hover:text-purple-400">Chart</a></li>
+      <li><a href="swap.html" class="hover:text-purple-400">Swap</a></li>
+      <li><button class="connect-btn">Connect Wallet</button></li>
+    </ul>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menuBtn" class="md:hidden text-purple-300 text-3xl">
+      ☰
+    </button>
+
+  </nav>
+
+  <!-- MOBILE DROPDOWN MENU -->
+  <div id="mobileMenu" class="hidden md:hidden flex flex-col bg-[#0b0b0ff0] border-t border-purple-900/40 px-6 py-4 gap-5 text-lg">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#tokenomics">Tokenomics</a>
+    <a href="index.html#partners">Partners</a>
+    <a href="chart.html">Chart</a>
+    <a href="swap.html">Swap</a>
+    <button class="connect-btn">Connect Wallet</button>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+
+
+
+<!-- ================= HERO SECTION ================= -->
+<section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-28">
+  <img src="/assets/icons/rwb-character.png" class="max-w-xl w-full hero-img" />
+  <h1 class="text-5xl font-bold mt-6">RAWAAB - The Warrior of Meme Power</h1>
+  <p class="text-xl mt-4 max-w-2xl">Where Meme Power Meets Real Utility. The future-proof warrior of blockchain.</p>
+  <p class="max-w-2xl mt-4 text-purple-200 text-lg">A fearless community-driven token ready to conquer the charts.</p>
+
+  <div class="mt-8 flex gap-4">
+    <a href="swap.html" class="px-8 py-3 bg-[#7b2ff7] text-white rounded-xl glow-btn text-lg">Buy Now</a>
+    <a href="#chart" class="px-8 py-3 bg-[#0f0f13] border border-[#7b2ff7] rounded-xl hover:bg-[#7b2ff7] hover:text-white text-lg transition">View Chart</a>
+  </div>
+</section>
+<!-- COIN LOGO BIG SECTION -->
+<section class="py-24 flex flex-col justify-center items-center px-6">
+  <img src="assets/rawaab-coin.png" class="w-[380px] md:w-[460px] glow-img" />
+  <h2 class="mt-10 text-4xl font-bold">The Official RAWAAB Coin</h2>
+  <p class="mt-3 max-w-2xl text-center text-purple-200">Your knight in shining armor riding through the crypto battlefield. Powered by community, loyalty, and unstoppable meme momentum.</p>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-20 px-6 bg-[#0f0f13]">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+    <div>
+      <h2 class="text-4xl font-bold mb-6">What is RAWAAB?</h2>
+      <p class="text-purple-200 leading-relaxed">RAWAAB is a meme coin forged in the fires of crypto culture, built on transparency, community, trust, and entertainment. With a powerful brand identity, a strong knight-based theme, and future real utilities—RAWAAB stands ready to lead the next wave of meme coins.</p>
+      <p class="mt-4 text-purple-200">No team allocation. No unfair launch. Only pure meme energy controlled by the community.</p>
+    </div>
+
+    <img src="assets/rwb-coin-alt.png" class="w-[360px] md:w-[420px] mx-auto glow-img" />
+  </div>
+</section>
+
+<!-- ================= TOKENOMICS ================= -->
+<section id="tokenomics" class="py-24 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-bold">Tokenomics</h2>
+  </div>
+
+  <div class="max-w-6xl mx-auto mt-10 grid md:grid-cols-3 gap-8">
+    <div class="glow-card text-center"><h3 class="text-2xl font-bold">Total Supply</h3><p class="text-xl mt-2">100,000,000,000</p></div>
+    <div class="glow-card text-center"><h3 class="text-2xl font-bold">Tax</h3><p class="text-xl mt-2">0% Buy / 0% Sell</p></div>
+    <div class="glow-card text-center"><h3 class="text-2xl font-bold">LP</h3><p class="text-xl mt-2">Locked</p></div>
+  </div>
+
+  <!-- TOKEN ADDRESS BIG CARD -->
+ <div class="contract-card glow-card text-center mt-10">
+    <h2>Contract Address</h2>
+    <p id="contractAddress" style="word-break: break-all;">123456789</p>
+    <div class="contract-buttons mt-4 flex justify-center gap-4">
+      <button id="copyBtn" class="btn btn-primary">Copy</button>
+      <button id="solscanBtn" class="btn btn-secondary">View on Solscan</button>
+    </div>
+  </div>
+</section>
+<!-- ================= CHART SECTION ================= -->
+<section id="chart" class="py-24 px-6  bg-[#0f0f13]">
+  <div class="max-w-5xl mx-auto text-center">
+    <img src="assets/logo/rwb-logo2.png" class="mx-auto w-80 hero-img" />
+    <h2 class="text-4xl font-bold mt-8">Live Chart</h2>
+    <p class="text-lg mt-2 mb-8">Track RWB price movement in real time.</p>
+
+    <div class="glow-card">
+      <iframe src="https://dexscreener.com/?theme=dark" class="w-full h-[500px] rounded-xl"></iframe>
+    </div>
+    
+  </div>
+</section>
+<!-- ================= PARTNERS ================= -->
+<section id="partners" class="py-24 px-6">
+  <h2 class="text-4xl font-bold text-center mb-10">Integrations & Exchanges</h2>
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+    <!-- Integrations -->
+    <div>
+      <h3 class="text-center text-2xl font-bold mb-4">Integrations</h3>
+      <div class="glow-card grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="glow-card text-center">Phantom</div>
+        <div class="glow-card text-center">Jupiter</div>
+        <div class="glow-card text-center">Solscan</div>
+      </div>
+    </div>
+
+    <!-- Exchanges -->
+    <div>
+      <h3 class="text-center text-2xl font-bold mb-4">Exchanges</h3>
+      <div class="glow-card grid-cols-2 md:grid-cols-3 gap-6 ">
+        <div class="glow-card text-center">DexScreener</div>
+        <div class="glow-card text-center">Raydium</div>
+        <div class="glow-card text-center">DexTools</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ================= EXPANDED SECTIONS: UTILITIES, ROADMAP, FAQ ================= -->
+
+<!-- UTILITIES / FUTURE FEATURES -->
+<section id="utilities" class="py-20 px-6">
+  <div class="container">
+    <h2 style="text-align:center;font-size:2.4rem;margin-bottom:18px">Utilities & Future Products</h2>
+    <div class="three-grid">
+      <div class="glow-card">
+        <h3>Staking Vaults</h3>
+        <p class="muted">Stake RWB for passive yield and exclusive NFT drops for top stakers.</p>
+      </div>
+      <div class="glow-card">
+        <h3>Play-to-Earn</h3>
+        <p class="muted">Mini-games and battles that reward active community members with RWB and loot.</p>
+      </div>
+      <div class="glow-card">
+        <h3>Knight DAO</h3>
+        <p class="muted">Community governance with voting power allocated by holdings and activity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section id="roadmap" class="py-20 px-6 bg-[#0f0f13]">
+  <div class="container">
+    <h2 style="text-align:center;font-size:2.2rem;margin-bottom:18px">Roadmap</h2>
+    <div class="glow-card">
+
+    <ul class="roadmap-list">
+      <li class="roadmap-item"><div class="roadmap-step">1</div><div><strong>Launch & Community Build</strong><div class="muted">Social push, liquidity, initial listings on DEXs, audit planning.</div></div></li>
+      <li class="roadmap-item"><div class="roadmap-step">2</div><div><strong>Liquidity & Staking</strong><div class="muted">Lock LP tokens, launch staking vaults and rewards.</div></div></li>
+      <li class="roadmap-item"><div class="roadmap-step">3</div><div><strong>Utilities & Partnerships</strong><div class="muted">Partner integrations, P2E alpha testing, bridge expansions.</div></div></li>
+      <li class="roadmap-item"><div class="roadmap-step">4</div><div><strong>Major Exchange Push</strong><div class="muted">CEX outreach, listings, large marketing campaigns.</div></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-20 px-6">
+  <div class="container">
+
+    <h2 style="text-align:center;font-size:2.2rem;margin-bottom:18px">FAQ</h2>
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:12px">
+    <div class="faq-item glow-card">
+
+      <div class="faq-item glow-card"><strong>Is RAWAAB audited?</strong><div class="muted">Audit scheduled — we publish the report and audit partner once completed.</div></div>
+      <div class="faq-item glow-card"><strong>Where can I buy RWB?</strong><div class="muted">Use the Swap button to connect wallet and swap via supported DEXs (Jupiter/Raydium). Links to official liquidity pools will be posted in announcements.</div></div>
+      <div class="faq-item glow-card"><strong>Is the contract verified?</strong><div class="muted">Yes — the contract address will be available and linked to Solscan when verified.</div></div>
+    </div>
+  </div>
+</section>
+<!-- Subscribe 
+<section id="subscribe-box" class="py-20 px-6">
+  <div class="container">
+    <h2 style="text-align:center;font-size:2.2rem;margin-bottom:18px">Latest News</h2>
+    <div class="glow-card">
+
+    <h2 style="text-align:center">Stay Updated</h2>
+    <p style="text-align: center">for RAWAAB news & announcements.</p>
+    <div style="display:flex;flex-direction:column;gap:0px">
+      <input placeholder="Your email">
+      <button class="bg-purple-">Subscribe</button>
+          <button class="rounded-xl glow-btn">Connect Wallet</button>
+
+    </div>
+    </div>
+</section>
+-->
+</main>
+
+<!-- ================= FOOTER ================= -->
+ <section>
+        <!-- SOCIAL SECTION -->
+    <section id="socials" class="social-section">
+        <div class="container maxw-800">
+        <div class="glow-card" style="display:wrap; margin-top:18px;text-align:center">
+      <h2 class="text-4xl font-bold mb-4 text-purple-400">Join RWB Community</h2>
+    <div class="social-icons">
+    <!-- X/Twitter -->
+    <a href="YOUR_X_LINK" target="_blank"><i class="fab fa-twitter"></i></a>
+
+    <!-- Telegram -->
+    <a href="YOUR_TELEGRAM_LINK" target="_blank"><i class="fab fa-telegram"></i></a>
+
+    <!-- Discord -->
+    <a href="YOUR_DISCORD_LINK" target="_blank"><i class="fab fa-discord"></i></a>
+
+    <!-- YouTube -->
+    <a href="YOUR_YOUTUBE_LINK" target="_blank"><i class="fab fa-youtube"></i></a>
+
+    <!-- Instagram -->
+    <a href="YOUR_INSTAGRAM_LINK" target="_blank"><i class="fab fa-instagram"></i></a>
+
+    <!-- Facebook -->
+    <a href="YOUR_FACEBOOK_LINK" target="_blank"><i class="fab fa-facebook"></i></a>
+
+    <!-- LinkedIn -->
+    <a href="YOUR_LINKEDIN_LINK" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+    <!-- Medium -->
+    <a href="YOUR_MEDIUM_LINK" target="_blank"><i class="fab fa-medium"></i></a>
+
+    <!-- TikTok -->
+    <a href="YOUR_TIKTOK_LINK" target="_blank"><i class="fab fa-tiktok"></i></a>
+
+    <!-- Reddit -->
+    <a href="YOUR_REDDIT_LINK" target="_blank"><i class="fab fa-reddit"></i></a>
+
+  </div>
+</section>
+  </main>
+<!-- FOOTER -->
+<footer class="mt-20 py-12 bg-[#0a0a0d] border-t border-purple-900/40">
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-center md:text-left">
+    
+    <!-- LOGO -->
+    <div class="flex flex-col items-center md:items-start gap-3">
+      <img src="assets/logo/rwb-logo2.png" class="h-14" />
+      <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
+        The official meme coin of fun, chaos and community — built with passion and powered by holders.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4 text-purple-400">Quick Links</h3>
+      <ul class="space-y-2 text-gray-300">
+      <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
+      <li><a href="index.html#about" class="hover:text-purple-400">About</a></li>
+      <li><a href="index.html#tokenomics" class="hover:text-purple-400">Tokenomics</a></li>
+      <li><a href="index.html#partners" class="hover:text-purple-400">Partners</a></li>
+      <li><a href="chart.html" class="hover:text-purple-400">Chart</a></li>
+      <li><a href="swap.html" class="hover:text-purple-400">Swap</a></li>
+      </ul>
+    </div>
+
+    <!-- SOCIAL -->
+    <div>
+        <div class="footer-social-icons">
+        <h3 class="text-xl font-semibold mb-4 text-purple-400">Quick Links</h3>
+        <div>
+      <a href="YOUR_X_LINK" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="YOUR_TELEGRAM_LINK" target="_blank"><i class="fab fa-telegram"></i></a>
+      <a href="YOUR_DISCORD_LINK" target="_blank"><i class="fab fa-discord"></i></a>
+      <a href="YOUR_YOUTUBE_LINK" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="YOUR_INSTAGRAM_LINK" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="YOUR_FACEBOOK_LINK" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="YOUR_LINKEDIN_LINK" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="YOUR_MEDIUM_LINK" target="_blank"><i class="fab fa-medium"></i></a>
+      <a href="YOUR_TIKTOK_LINK" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="YOUR_REDDIT_LINK" target="_blank"><i class="fab fa-reddit"></i></a>
+      </div>
+    </div>
+    <div>
+  <p class="text-center text-gray-500 text-sm mt-10">
+    © 2025 Rawaab Meme Coin. All Rights Reserved.
+  </p>
+</div>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const addressEl = document.getElementById("contractAddress");
+  const copyBtn = document.getElementById("copyBtn");
+  const solscanBtn = document.getElementById("solscanBtn");
+
+  if (!addressEl || !copyBtn || !solscanBtn) {
+    console.warn("Contract card missing elements.");
+    return;
+  }
+
+  const address = addressEl.textContent.trim();
+
+  // ---------------------------
+  // COPY BUTTON (FULLY WORKING)
+  // ---------------------------
+  copyBtn.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(address);
+      copyBtn.textContent = "Copied!";
+      setTimeout(() => (copyBtn.textContent = "Copy"), 1500);
+    } catch (err) {
+      alert("Copy failed!");
+    }
+  });
+
+  // ------------------------------
+  // SOLSCAN BUTTON (CORRECT URL)
+  // ------------------------------
+  solscanBtn.addEventListener("click", () => {
+    const url = `https://solscan.io/account/${address}`;
+    window.open(url, "_blank", "noopener");
+  });
+
+});
+</script>
+<script src="main.js"></script>
+
+</body>
+</html>

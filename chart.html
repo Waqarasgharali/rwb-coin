@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=2">
+  <title>Chart — RAWAAB (RWB)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/glow.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Cg8C6JHkzZLNEwG8VS9C..."
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <!-- NAVBAR -->
+<header class="fixed top-0 left-0 w-full z-50 bg-[#0b0b0fea] backdrop-blur border-b border-purple-900/40">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+    
+    <!-- LOGO -->
+    <div class="flex items-center gap-3">
+      <img src="assets/logo/mascot.png" class="w-12 h-12 object-contain" />
+      <img src="assets/logo/rawaab-icon.png" class="h-10 object-contain" />
+    </div>
+
+    <!-- DESKTOP NAV -->
+    <ul class="hidden md:flex items-center gap-8 text-lg">
+      <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
+      <li><a href="chart.html" class="hover:text-purple-400">Chart</a></li>
+      <li><a href="swap.html" class="hover:text-purple-400">Swap</a></li>
+      <li><button class="connect-btn">Connect Wallet</button></li>
+    </ul>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menuBtn" class="md:hidden text-purple-300 text-3xl">
+      ☰
+    </button>
+
+  </nav>
+
+  <!-- MOBILE DROPDOWN MENU -->
+  <div id="mobileMenu" class="hidden md:hidden flex flex-col bg-[#0b0b0ff0] border-t border-purple-900/40 px-6 py-4 gap-5 text-lg">
+    <a href="index.html">Home</a>
+    <a href="chart.html">Chart</a>
+    <a href="swap.html">Swap</a>
+    <button class="connect-btn">Connect Wallet</button>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+
+
+<main style="padding-top:110px">
+  <section class="section center">
+    <div class="container maxw-1000">
+      <h1 class="section-title">RWB Live Chart</h1>
+      <p class="muted center">TradingView chart (editable); DEXScreener fallback below.</p>
+
+      <div id="tv-widget" class="glow-card" style="margin-top:18px;padding:12px">
+        <div id="tradingview_12345" style="height:520px;"></div>
+      </div>
+
+      <div class="glow-card" style="margin-top:18px">
+       <!-- DexScreener Dark Theme -->
+<div class="dexscreener-container">
+  <iframe
+    src="https://dexscreener.com/solana/?theme=dark"
+    width="100%"
+    height="500"
+    frameborder="0"
+    allowtransparency="true"
+    allowfullscreen>
+  </iframe>
+</div>
+
+    </div>
+  </section>
+</main>
+        <!-- SOCIAL SECTION -->
+    <section id="socials" class="social-section">
+        <div class="container maxw-800">
+        <div class="glow-card" style="display:wrap; margin-top:18px;text-align:center">
+      <h2 class="text-4xl font-bold mb-4 text-purple-400">Join RWB Community</h2>
+    <div class="social-icons">
+    <!-- X/Twitter -->
+    <a href="YOUR_X_LINK" target="_blank"><i class="fab fa-twitter"></i></a>
+
+    <!-- Telegram -->
+    <a href="YOUR_TELEGRAM_LINK" target="_blank"><i class="fab fa-telegram"></i></a>
+
+    <!-- Discord -->
+    <a href="YOUR_DISCORD_LINK" target="_blank"><i class="fab fa-discord"></i></a>
+
+    <!-- YouTube -->
+    <a href="YOUR_YOUTUBE_LINK" target="_blank"><i class="fab fa-youtube"></i></a>
+
+    <!-- Instagram -->
+    <a href="YOUR_INSTAGRAM_LINK" target="_blank"><i class="fab fa-instagram"></i></a>
+
+    <!-- Facebook -->
+    <a href="YOUR_FACEBOOK_LINK" target="_blank"><i class="fab fa-facebook"></i></a>
+
+    <!-- LinkedIn -->
+    <a href="YOUR_LINKEDIN_LINK" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+    <!-- Medium -->
+    <a href="YOUR_MEDIUM_LINK" target="_blank"><i class="fab fa-medium"></i></a>
+
+    <!-- TikTok -->
+    <a href="YOUR_TIKTOK_LINK" target="_blank"><i class="fab fa-tiktok"></i></a>
+
+    <!-- Reddit -->
+    <a href="YOUR_REDDIT_LINK" target="_blank"><i class="fab fa-reddit"></i></a>
+
+  </div>
+</section>
+  </main>
+<!-- FOOTER -->
+<footer class="mt-20 py-12 bg-[#0a0a0d] border-t border-purple-900/40">
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-center md:text-left">
+    
+    <!-- LOGO -->
+    <div class="flex flex-col items-center md:items-start gap-3">
+      <img src="assets/logo/rwb-logo2.png" class="h-14" />
+      <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
+        The official meme coin of fun, chaos and community — built with passion and powered by holders.
+      </p>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4 text-purple-400">Quick Links</h3>
+      <ul class="space-y-2 text-gray-300">
+      <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
+      <li><a href="index.html#about" class="hover:text-purple-400">About</a></li>
+      <li><a href="index.html#tokenomics" class="hover:text-purple-400">Tokenomics</a></li>
+      <li><a href="index.html#partners" class="hover:text-purple-400">Partners</a></li>
+      <li><a href="chart.html" class="hover:text-purple-400">Chart</a></li>
+      <li><a href="swap.html" class="hover:text-purple-400">Swap</a></li>
+      </ul>
+    </div>
+
+    <!-- SOCIAL -->
+    <div>
+        <div class="footer-social-icons">
+        <h3 class="text-xl font-semibold mb-4 text-purple-400">Quick Links</h3>
+        <div>
+      <a href="YOUR_X_LINK" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="YOUR_TELEGRAM_LINK" target="_blank"><i class="fab fa-telegram"></i></a>
+      <a href="YOUR_DISCORD_LINK" target="_blank"><i class="fab fa-discord"></i></a>
+      <a href="YOUR_YOUTUBE_LINK" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="YOUR_INSTAGRAM_LINK" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="YOUR_FACEBOOK_LINK" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="YOUR_LINKEDIN_LINK" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="YOUR_MEDIUM_LINK" target="_blank"><i class="fab fa-medium"></i></a>
+      <a href="YOUR_TIKTOK_LINK" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="YOUR_REDDIT_LINK" target="_blank"><i class="fab fa-reddit"></i></a>
+      </div>
+    </div>
+    <div>
+  <p class="text-center text-gray-500 text-sm mt-10">
+    © 2025 Rawaab Meme Coin. All Rights Reserved.
+  </p>
+</div>
+</footer>
+<script>
+  // TradingView simple widget loader
+  (function(){
+    const s = document.createElement('script');
+    s.src = 'https://s3.tradingview.com/tv.js';
+    s.onload = function(){
+      new TradingView.widget({
+        "container_id": "tradingview_12345",
+        "width": "100%",
+        "height": 520,
+        "symbol": "SOLUSD",
+        "interval": "60",
+        "timezone": "Etc/UTC",
+        "theme": "dark",
+        "style": "1",
+        "locale": "en",
+        "toolbar_bg": "#1f1f23",
+        "enable_publishing": false,
+        "allow_symbol_change": true
+      });
+    };
+    document.head.appendChild(s);
+  })();
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>
